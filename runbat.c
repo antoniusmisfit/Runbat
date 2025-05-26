@@ -35,10 +35,7 @@ int main(int argc,char* argv[])
  }
  else return 0;
  infile=fopen(arglist.argv[0],"r");
- char outfname[strlen(arglist.argv[0])+1];
- strcpy(outfname,arglist.argv[0]);
- outfname[strlen(arglist.argv[0])-1]='k';
- outfile=fopen(outfname,"w");
+ outfile=fopen("batch.out","w");
  /* Process batch file and write to output file */
  char ch;
  while((ch=fgetc(infile))!=EOF)
