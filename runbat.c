@@ -15,8 +15,6 @@ static struct
  char** argv;
 } arglist;
 
-static char buffer[1000];
-static char runbuf[1000];
 static FILE* infile;
 static FILE* outfile;
 
