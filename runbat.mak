@@ -8,10 +8,11 @@ LDFLAGS=
 AS=aswin
 AR=arwin
 COPTS=-S $(CFLAGS) -fno-common -ansi -I. -I../pdpclib -D__WIN32__
+PROG=runbat
 
-all: clean runbat.exe
+all: clean $(PROG).exe
 
-runbat.exe: runbat.o
+$(PROG).exe: $(PROG).o
   $(LD) $(LDFLAGS) -s -o runbat.exe ../pdpclib/w32start.o runbat.o ../pdpclib/msvcrt.a
 
 .c.o:
@@ -20,4 +21,4 @@ runbat.exe: runbat.o
   rm -f $*.s
 
 clean:
-  rm -f *.o runbat.exe
+  rm -f *.o $(PROG).exe
