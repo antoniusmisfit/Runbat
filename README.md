@@ -32,11 +32,12 @@ Dear $1,
 My name is $2 and this is to acknowledge that you are awesome.
 .
 
-Then run RUNBAT as such:
+Then invoke RUNBAT as such:
 
 RUNBAT template.txt Paul Tony
 
 The resulting BATCH.OUT output file can then be renamed as letter.txt, suitable for whatever use you need.
+Or you can copy RUNBAT.EXE to TEMPLATE.EXE, and follow the above instructions, replacing RUNBAT and BATCH.OUT with TEMPLATE and OUTPUT.OUT respectively.
 
 ## Todo
 
