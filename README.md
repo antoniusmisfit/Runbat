@@ -1,6 +1,6 @@
 # Runbat
 
-A utility to implement batch file arguments for PDOS.
+A utility to implement batch file arguments for [PDOS](https://www.pdos.org/).
 
 ## Compiling on PDOS
 
